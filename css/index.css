@@ -1,0 +1,1352 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/* шапка профиля  */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 999;
+    width: 100%;
+    box-shadow: 0px 7px 12px 0px #363434;
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius: 10px;    
+}
+.div-header{
+    max-width: 100%;
+    background-color: black;
+    height: 100px;
+    text-align: center;
+}
+.logo{
+    padding-top: 50px;
+    max-height: 100%;
+    width: 200px;
+    /* max-width: 100%; */
+}
+/* контент */
+main{
+    margin-top: 150px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+/* первый блок */
+/* видео */
+.div-video{
+    overflow: hidden;
+    z-index: -100;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top:45%;
+    border-radius: 20px;
+}
+.video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.block1{
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    text-align: center;
+}
+/* название продукта */
+.header-main-one{
+    margin-top: 50px;
+    color: white;
+}
+/* столбцы */
+.block-flex{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.block-one{
+    background-color: white;
+    border: 10px solid white;
+    border-radius: 10px;
+    width: 20%;
+}
+
+.product-video{
+    width: 50px;
+}
+.form-video button{
+    background-color: rgb(102, 119, 247);
+    border: 1px solid rgb(102, 119, 247);
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: white;
+}
+button:hover{
+    background-color:rgb(251, 228, 228);
+}
+/* второй блок */
+.flex-block{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+/* столбцы */
+.stolb1{
+    display: block;
+}
+.img-stolb{
+    width: 100px;
+}
+.info{
+    background-color: rgb(102, 119, 247);
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 200px;
+    text-align: center;
+    padding: 10px 0;
+}
+.img-stolb{
+    border: 1px solid black;
+    border-radius: 70%;
+}
+.p-stolb{
+    color: white;
+}
+.btn-stolb{
+    background-color: white;
+    border: 1px solid rgb(88, 86, 86);
+    border-radius: 5px;
+    color: rgb(88, 86, 86);
+}
+/* центр - картинка */
+.stolb-img{
+    align-self: center;
+}
+/* третий блок */
+
+.div-comment{
+    text-align: center;
+    margin-top: 100px;
+}
+.com{
+    background-color: rgb(102, 119, 247);
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+.name-comment img{
+    max-width: 100%;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(102, 119, 247);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+/* четвертый блок */
+/* столбцы */
+.flex-block-man{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;    
+}
+.stolb-man{
+    width: 300px;
+    background-color: rgb(102, 119, 247);
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+.img-man{
+    max-width: 100%;
+    width: 80%;
+}
+.p-man{
+    color: white;
+}
+/* описание */
+.disc{
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(102, 119, 247);
+    padding: 15px 0px;
+    margin-top: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.ul-man{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    justify-content: center;
+    color: white;
+}
+.form-man button{
+    background-color: white;
+    border: 1px solid rgb(88, 86, 86);
+    border-radius: 5px;
+    color: rgb(88, 86, 86);
+    padding: 5px 10px;
+}
+/* пятый блок */
+/* название продукта */
+.name-product{
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgb(102, 119, 247);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+/* таймер */
+
+.timer {
+    display: flex;
+    font-size: 48px;
+    justify-content: center;
+  }
+/* блоки заказ */
+/* продукт */
+.flex-buy{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.product-buy{
+    background-color:rgb(102, 119, 247) ;
+    border-radius: 10px;
+    padding:10px;
+    text-align: center;
+}
+.product-buy img{
+    width: 60%;
+}
+.price{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.price h2{
+    text-decoration: line-through;
+    color: red;
+}
+/* форма заполнения */
+.why-buy{
+ background-color: rgb(102, 119, 247) ;
+ border-radius: 10px;
+ padding:10px;
+ height: 400px;
+ width: 20%;
+ text-align: center;
+}
+.form-buy{
+    display: grid;
+    padding-top: 100px;
+}
+.input-buy{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 2px;
+}
+.btn-buy{
+    border: 1px solid #363434;
+    border-radius: 5px;
+    padding: 5px 2px;
+    background-color: white;
+    color: #363434;
+}
+/* футер */
+footer{
+    height: 100px;
+    background-color: black;
+}
+.div-footer{
+    text-align: center;
+    padding-top: 20px;
+}
+footer p{
+    color: white;
+}
+/* адаптация */
+@media screen and (min-width:1069px) and (max-width:1132px){
+    .div-video{
+        overflow: hidden;
+
+        /* height: 300px; */
+        width: 100%;
+    }
+    .video{
+        top: 0;
+        left: 0;
+        /* height: 100px; */
+    }
+    /* название продукта */
+    .header-main-one{
+        font-size: 17px;
+        margin-top: 0;
+    }
+    /* столбцы */
+    .block-flex{
+        margin-top: 2px;
+    }
+    .p-video{
+        font-size: 15px;
+        /* padding: 2px; */
+    }
+    .product-video{
+        width: 70px;
+        padding: 0px;
+        margin: 0;
+    }
+    /* второй блок */
+    /* столбцы */
+    .img-stolb{
+        width: 100px;
+    }
+    .info{
+        background-color: rgb(102, 119, 247);
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 150px;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .p-stolb{
+        font-size: 12px;
+    }
+    .btn-stolb{
+        width: 70px;
+        font-size: 10px;
+    }
+    /* центр - картинка */
+    .stolb-img img{
+        width: 140px;
+    }
+    /* четвертый блок */
+    /* столбцы */
+    .stolb-man{
+        width: 200px;
+    }
+    /* описание */
+    .ul-man{
+        font-size: 14px;
+    }
+    /* пятый блок */
+    /* название продукта */
+    .name-product{
+        font-size: 10px;
+    }
+    /* таймер */
+
+    .timer {
+        font-size: 30px;
+    }
+    /* блоки заказ */
+    /* продукт */
+    .flex-buy{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .product-buy{
+        height: 320px;
+        width: 200px;
+    }
+    .product-buy img{
+        width: 50%;
+        margin-top: 50px;
+    }
+    .price{
+        display: block;
+    }
+    /* форма заполнения */
+    .why-buy{
+    height: 320px;
+    width: 200px;
+    }
+    .input-buy{
+        width: 200px;
+        margin-top: 5px;
+    }
+    .btn-buy{
+        margin-top: 5px;
+        width: 205px;
+        font-size: 15px;
+    }       
+}
+@media screen and (min-width:1014px) and (max-width:1069px){
+    .div-video{
+        overflow: hidden;
+
+        /* height: 300px; */
+        width: 100%;
+    }
+    .video{
+        top: 0;
+        left: 0;
+        /* height: 100px; */
+    }
+    /* название продукта */
+    .header-main-one{
+        font-size: 15px;
+        margin-top: 0;
+    }
+    /* столбцы */
+    .block-flex{
+        margin-top: 2px;
+    }
+    .p-video{
+        font-size: 15px;
+        /* padding: 2px; */
+    }
+    .product-video{
+        width: 40px;
+        padding: 0px;
+        margin: 0;
+    }
+    /* второй блок */
+    /* столбцы */
+    .img-stolb{
+        width: 100px;
+    }
+    .info{
+        background-color: rgb(102, 119, 247);
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 120px;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .p-stolb{
+        font-size: 12px;
+    }
+    .btn-stolb{
+        width: 50px;
+        font-size: 10px;
+    }
+    /* центр - картинка */
+    .stolb-img img{
+        width: 110px;
+    }
+    /* четвертый блок */
+    /* столбцы */
+    .stolb-man{
+        width: 200px;
+    }
+    /* описание */
+    .ul-man{
+        font-size: 14px;
+    }
+    /* пятый блок */
+    /* название продукта */
+    .name-product{
+        font-size: 10px;
+    }
+    /* таймер */
+
+    .timer {
+        font-size: 30px;
+    }
+    /* блоки заказ */
+    /* продукт */
+    .flex-buy{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .product-buy{
+        height: 320px;
+        width: 200px;
+    }
+    .product-buy img{
+        width: 50%;
+        margin-top: 50px;
+    }
+    .price{
+        display: block;
+    }
+    /* форма заполнения */
+    .why-buy{
+    height: 320px;
+    width: 200px;
+    }
+    .input-buy{
+        width: 200px;
+        margin-top: 5px;
+    }
+    .btn-buy{
+        margin-top: 5px;
+        width: 205px;
+        font-size: 15px;
+    }    
+}
+@media screen and (min-width:981px) and (max-width:1014px){
+    .div-video{
+        overflow: hidden;
+
+        /* height: 300px; */
+        width: 100%;
+    }
+    .video{
+        top: 0;
+        left: 0;
+        /* height: 100px; */
+    }
+    /* название продукта */
+    .header-main-one{
+        font-size: 15px;
+        margin-top: 0;
+    }
+    /* столбцы */
+    .block-flex{
+        margin-top: 2px;
+    }
+    .p-video{
+        font-size: 15px;
+        /* padding: 2px; */
+    }
+    .product-video{
+        width: 40px;
+        padding: 0px;
+        margin: 0;
+    }
+    /* второй блок */
+    /* столбцы */
+    .img-stolb{
+        width: 100px;
+    }
+    .info{
+        background-color: rgb(102, 119, 247);
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 120px;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .p-stolb{
+        font-size: 12px;
+    }
+    .btn-stolb{
+        width: 50px;
+        font-size: 10px;
+    }
+    /* центр - картинка */
+    .stolb-img img{
+        width: 110px;
+    }
+    /* четвертый блок */
+    /* столбцы */
+    .stolb-man{
+        width: 200px;
+    }
+    /* описание */
+    .ul-man{
+        font-size: 14px;
+    }
+    /* пятый блок */
+    /* название продукта */
+    .name-product{
+        font-size: 10px;
+    }
+    /* таймер */
+
+    .timer {
+        font-size: 30px;
+    }
+    /* блоки заказ */
+    /* продукт */
+    .flex-buy{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .product-buy{
+        height: 320px;
+        width: 200px;
+    }
+    .product-buy img{
+        width: 50%;
+        margin-top: 50px;
+    }
+    .price{
+        display: block;
+    }
+    /* форма заполнения */
+    .why-buy{
+    height: 320px;
+    width: 200px;
+    }
+    .input-buy{
+        width: 200px;
+        margin-top: 5px;
+    }
+    .btn-buy{
+        margin-top: 5px;
+        width: 205px;
+        font-size: 15px;
+    }   
+}
+@media screen and (min-width:780px) and (max-width:981px){
+    .div-video{
+        overflow: hidden;
+
+        /* height: 300px; */
+        width: 100%;
+    }
+    .video{
+        top: 0;
+        left: 0;
+        /* height: 100px; */
+    }
+    /* название продукта */
+    .header-main-one{
+        font-size: 15px;
+        margin-top: 0;
+    }
+    /* столбцы */
+    .block-flex{
+        margin-top: 2px;
+    }
+    .p-video{
+        font-size: 12px;
+        /* padding: 2px; */
+    }
+    .product-video{
+        width: 30px;
+        padding: 0px;
+        margin: 0;
+    }
+    /* второй блок */
+    /* столбцы */
+    .img-stolb{
+        width: 60px;
+    }
+    .info{
+        background-color: rgb(102, 119, 247);
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 120px;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .p-stolb{
+        font-size: 12px;
+    }
+    .btn-stolb{
+        width: 50px;
+        font-size: 10px;
+    }
+    /* центр - картинка */
+    .stolb-img img{
+        width: 90px;
+    }
+    /* четвертый блок */
+    /* столбцы */
+    .stolb-man{
+        width: 200px;
+    }
+    /* описание */
+    .ul-man{
+        font-size: 14px;
+    }
+    /* пятый блок */
+    /* название продукта */
+    .name-product{
+        font-size: 10px;
+    }
+    /* таймер */
+
+    .timer {
+        font-size: 30px;
+    }
+    /* блоки заказ */
+    /* продукт */
+    .flex-buy{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .product-buy{
+        height: 320px;
+        width: 200px;
+    }
+    .product-buy img{
+        width: 50%;
+        margin-top: 50px;
+    }
+    .price{
+        display: block;
+    }
+    /* форма заполнения */
+    .why-buy{
+    height: 320px;
+    width: 200px;
+    }
+    .input-buy{
+        width: 200px;
+        margin-top: 5px;
+    }
+    .btn-buy{
+        margin-top: 5px;
+        width: 205px;
+        font-size: 15px;
+    }    
+}
+@media screen and (min-width:680px) and (max-width:780px){
+    .div-video{
+        overflow: hidden;
+
+        /* height: 300px; */
+        width: 100%;
+    }
+    .video{
+        top: 0;
+        left: 0;
+        /* height: 100px; */
+    }
+    /* название продукта */
+    .header-main-one{
+        font-size: 15px;
+        margin-top: 0;
+    }
+    /* столбцы */
+    .block-flex{
+        margin-top: 2px;
+    }
+    .p-video{
+        font-size: 9.6px;
+        /* padding: 2px; */
+    }
+    .product-video{
+        width: 30px;
+        padding: 0px;
+        margin: 0;
+    }
+    /* второй блок */
+    /* столбцы */
+    .img-stolb{
+        width: 60px;
+    }
+    .info{
+        background-color: rgb(102, 119, 247);
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 120px;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .p-stolb{
+        font-size: 12px;
+    }
+    .btn-stolb{
+        width: 50px;
+        font-size: 10px;
+    }
+    /* центр - картинка */
+    .stolb-img img{
+        width: 90px;
+    }
+    /* четвертый блок */
+    /* столбцы */
+    .stolb-man{
+        width: 200px;
+    }
+    /* описание */
+    .ul-man{
+        font-size: 14px;
+    }
+    /* пятый блок */
+    /* название продукта */
+    .name-product{
+        font-size: 10px;
+    }
+    /* таймер */
+
+    .timer {
+        font-size: 30px;
+    }
+    /* блоки заказ */
+    /* продукт */
+    .flex-buy{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .product-buy{
+        height: 300px;
+        width: 100px;
+    }
+    .product-buy img{
+        width: 50%;
+        margin-top: 50px;
+    }
+    .price{
+        display: block;
+    }
+    /* форма заполнения */
+    .why-buy{
+    height: 300px;
+    width: 200px;
+    }
+    .input-buy{
+        width: 190px;
+        margin-top: 5px;
+    }
+    .btn-buy{
+        margin-top: 5px;
+        width: 195px;
+        font-size: 15px;
+    } 
+}
+@media screen and (min-width:581px) and (max-width:680px){
+    .div-video{
+        overflow: hidden;
+
+        /* height: 300px; */
+        width: 100%;
+    }
+    .video{
+        top: 0;
+        left: 0;
+        /* height: 100px; */
+    }
+    /* название продукта */
+    .header-main-one{
+        font-size: 8px;
+        margin-top: 0;
+    }
+    /* столбцы */
+    .block-flex{
+        margin-top: 5px;
+    }
+    .p-video{
+        font-size: 9px;
+        /* padding: 2px; */
+    }
+    .product-video{
+        width: 30px;
+        padding: 0px;
+        margin: 0;
+    }
+    /* второй блок */
+    /* столбцы */
+    .img-stolb{
+        width: 60px;
+    }
+    .info{
+        background-color: rgb(102, 119, 247);
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 100px;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .p-stolb{
+        font-size: small;
+    }
+    .btn-stolb{
+        width: 50px;
+        font-size: 10px;
+    }
+    /* центр - картинка */
+    .stolb-img img{
+        width: 90px;
+    }
+    /* четвертый блок */
+    /* столбцы */
+    .stolb-man{
+        width: 100px;
+    }
+    /* описание */
+    .ul-man{
+        font-size: 14px;
+    }
+    /* пятый блок */
+    /* название продукта */
+    .name-product{
+        font-size: 10px;
+    }
+    /* таймер */
+
+    .timer {
+        font-size: 30px;
+    }
+    /* блоки заказ */
+    /* продукт */
+    .flex-buy{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .product-buy{
+        height: 300px;
+        width: 100px;
+    }
+    .product-buy img{
+        width: 50%;
+        margin-top: 50px;
+    }
+    .price{
+        display: block;
+    }
+    /* форма заполнения */
+    .why-buy{
+    height: 300px;
+    width: 100px;
+    }
+    .input-buy{
+        width: 100px;
+        margin-top: 5px;
+    }
+    .btn-buy{
+        margin-top: 5px;
+    } 
+}
+@media screen and (min-width:463px) and (max-width:581px){
+        /* первый блок */
+        .div-video{
+            overflow: hidden;
+    
+            /* height: 300px; */
+            width: 100%;
+        }
+        .video{
+            top: 0;
+            left: 0;
+            /* height: 100px; */
+        }
+        /* название продукта */
+        .header-main-one{
+            font-size: 7px;
+            margin-top: 0;
+        }
+        /* столбцы */
+        .block-flex{
+            margin-top: 10px;
+        }
+        .p-video{
+            font-size: 7px;
+            /* padding: 2px; */
+        }
+        .product-video{
+            width: 20px;
+            padding: 0px;
+            margin: 0;
+        }
+    /* второй блок */
+    /* столбцы */
+    .img-stolb{
+        width: 60px;
+    }
+    .info{
+        background-color: rgb(102, 119, 247);
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 70px;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .p-stolb{
+        font-size: small;
+    }
+    .btn-stolb{
+        width: 50px;
+        font-size: 10px;
+    }
+    /* центр - картинка */
+    .stolb-img img{
+        width: 90px;
+    }
+    /* четвертый блок */
+    /* столбцы */
+    .stolb-man{
+        width: 100px;
+    }
+    /* описание */
+    .ul-man{
+        font-size: 10px;
+    }
+    /* пятый блок */
+    /* название продукта */
+    .name-product{
+        font-size: 10px;
+    }
+    /* таймер */
+
+    .timer {
+        font-size: 30px;
+    }
+    /* блоки заказ */
+    /* продукт */
+    .flex-buy{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .product-buy{
+        height: 300px;
+        width: 100px;
+    }
+    .product-buy img{
+        width: 50%;
+        margin-top: 50px;
+    }
+    .price{
+        display: block;
+    }
+    /* форма заполнения */
+    .why-buy{
+    height: 300px;
+    width: 100px;
+    }
+    .input-buy{
+        width: 100px;
+        margin-top: 5px;
+    }
+    .btn-buy{
+        margin-top: 5px;
+    }
+}
+@media screen and (min-width:399px) and (max-width:463px){
+    .div-video{
+        overflow: hidden;
+
+        /* height: 300px; */
+        width: 100%;
+    }
+    .video{
+        top: 0;
+        left: 0;
+        /* height: 100px; */
+    }
+    /* название продукта */
+    .header-main-one{
+        font-size: 6px;
+        margin-top: 0;
+    }
+    /* столбцы */
+    .block-flex{
+        margin-top: 2px;
+    }
+    .p-video{
+        font-size: 5.4px;
+        /* padding: 2px; */
+    }
+    .product-video{
+        width: 20px;
+        padding: 0px;
+        margin: 0;
+    }
+    /* второй блок */
+    /* столбцы */
+    .img-stolb{
+        width: 40px;
+    }
+    .info{
+        background-color: rgb(102, 119, 247);
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 70px;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .p-stolb{
+        font-size: small;
+    }
+    .btn-stolb{
+        width: 40px;
+        font-size: 7px;
+    }
+    /* центр - картинка */
+    .stolb-img img{
+        width: 70px;
+    }
+    /* четвертый блок */
+    /* столбцы */
+    .stolb-man{
+        width: 100px;
+    }
+    /* описание */
+    .ul-man{
+        font-size: 10px;
+    }
+    /* пятый блок */
+    /* название продукта */
+    .name-product{
+        font-size: 10px;
+    }
+    /* таймер */
+
+    .timer {
+        font-size: 30px;
+    }
+    /* блоки заказ */
+    /* продукт */
+    .flex-buy{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .product-buy{
+        height: 300px;
+        width: 100px;
+    }
+    .product-buy img{
+        width: 50%;
+        margin-top: 50px;
+    }
+    .price{
+        display: block;
+    }
+    /* форма заполнения */
+    .why-buy{
+    height: 300px;
+    width: 100px;
+    }
+    .input-buy{
+        width: 100px;
+        margin-top: 5px;
+    }
+    .btn-buy{
+        margin-top: 5px;
+    }
+}    
+@media screen and (min-width:348px) and (max-width:399px){
+    /* первый блок */
+    .div-video{
+        overflow: hidden;
+
+        /* height: 300px; */
+        width: 100%;
+    }
+    .video{
+        top: 0;
+        left: 0;
+        /* height: 100px; */
+    }
+    /* название продукта */
+    .header-main-one{
+        font-size: 5px;
+        margin-top: 0;
+    }
+    /* столбцы */
+    .block-flex{
+        margin-top: 2px;
+    }
+    .p-video{
+        font-size: 4px;
+        /* padding: 2px; */
+    }
+    .product-video{
+        width: 20px;
+        padding: 0px;
+        margin: 0;
+    }
+    /* второй блок */
+    /* столбцы */
+    .img-stolb{
+        width: 20px;
+    }
+    .info{
+        background-color: rgb(102, 119, 247);
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 70px;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .p-stolb{
+        font-size: small;
+    }
+    .btn-stolb{
+        width: 40px;
+        font-size: 7px;
+    }
+    /* центр - картинка */
+    .stolb-img img{
+        width: 70px;
+    }
+    /* четвертый блок */
+    /* столбцы */
+    .stolb-man{
+        width: 100px;
+    }
+    /* описание */
+    .ul-man{
+        font-size: 10px;
+    }
+    /* пятый блок */
+    /* название продукта */
+    .name-product{
+        font-size: 10px;
+    }
+    /* таймер */
+
+    .timer {
+        font-size: 30px;
+    }
+    /* блоки заказ */
+    /* продукт */
+    .flex-buy{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .product-buy{
+        height: 300px;
+        width: 100px;
+    }
+    .product-buy img{
+        width: 50%;
+        margin-top: 50px;
+    }
+    .price{
+        display: block;
+    }
+    /* форма заполнения */
+    .why-buy{
+    height: 300px;
+    width: 100px;
+    }
+    .input-buy{
+        width: 100px;
+        margin-top: 5px;
+    }
+    .btn-buy{
+        margin-top: 5px;
+    }
+}
+@media screen and (min-width:280px) and (max-width:348px){
+    /* первый блок */
+    /* видео */
+    .div-video{
+        overflow: hidden;
+
+        /* height: 300px; */
+        width: 100%;
+    }
+    .video{
+        top: 0;
+        left: 0;
+        /* height: 100px; */
+    }
+    /* название продукта */
+    .header-main-one{
+        font-size: 5px;
+        margin-top: 0;
+    }
+    /* столбцы */
+    .block-flex{
+        margin-top: 2px;
+    }
+    .p-video{
+        font-size: 3px;
+        /* padding: 2px; */
+    }
+    .product-video{
+        width: 20px;
+        padding: 0px;
+        margin: 0;
+    }
+    /* второй блок */
+    /* столбцы */
+    .img-stolb{
+        width: 20px;
+    }
+    .info{
+        background-color: rgb(102, 119, 247);
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 70px;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .p-stolb{
+        font-size: small;
+    }
+    .btn-stolb{
+        width: 30px;
+        font-size: 5px;
+    }
+    /* центр - картинка */
+    .stolb-img img{
+        width: 70px;
+    }
+    /* четвертый блок */
+    /* столбцы */
+    .stolb-man{
+        width: 100px;
+    }
+    /* описание */
+    .ul-man{
+        font-size: 7px;
+    }
+    /* пятый блок */
+    /* название продукта */
+    .name-product{
+        font-size: 10px;
+    }
+    /* таймер */
+
+    .timer {
+        font-size: 30px;
+    }
+    /* блоки заказ */
+    /* продукт */
+    .flex-buy{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .product-buy{
+        height: 300px;
+        width: 100px;
+    }
+    .product-buy img{
+        width: 50%;
+        margin-top: 50px;
+    }
+    .price{
+        display: block;
+    }
+    /* форма заполнения */
+    .why-buy{
+    height: 300px;
+    width: 100px;
+    }
+    .input-buy{
+        width: 100px;
+        margin-top: 5px;
+    }
+    .btn-buy{
+        margin-top: 5px;
+    }
+}
